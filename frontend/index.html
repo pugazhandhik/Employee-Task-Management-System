@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Task Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Employee Task Management System</h1>
+            <p class="subtitle">Manage your employees and their tasks efficiently</p>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('employees')">Employees</button>
+            <button class="tab-btn" onclick="showTab('tasks')">Tasks</button>
+        </div>
+
+        <!-- Employees Tab -->
+        <div id="employees-tab" class="tab-content active">
+            <div class="section-header">
+                <h2>Employees</h2>
+                <button class="btn btn-primary" onclick="showEmployeeForm()">+ Add Employee</button>
+            </div>
+
+            <!-- Employee Form -->
+            <div id="employee-form" class="form-card" style="display: none;">
+                <h3 id="employee-form-title">Add New Employee</h3>
+                <form id="employeeForm" onsubmit="handleEmployeeSubmit(event)">
+                    <input type="hidden" id="employee-id">
+                    <div class="form-group">
+                        <label for="employee-name">Name *</label>
+                        <input type="text" id="employee-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="employee-email">Email *</label>
+                        <input type="email" id="employee-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="employee-position">Position</label>
+                        <input type="text" id="employee-position">
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="employee-active" checked>
+                            Active Employee
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-secondary" onclick="cancelEmployeeForm()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Employees List -->
+            <div id="employees-list" class="grid"></div>
+        </div>
+
+        <!-- Tasks Tab -->
+        <div id="tasks-tab" class="tab-content">
+            <div class="section-header">
+                <h2>Tasks</h2>
+                <button class="btn btn-primary" onclick="showTaskForm()">+ Add Task</button>
+            </div>
+
+            <!-- Task Form -->
+            <div id="task-form" class="form-card" style="display: none;">
+                <h3 id="task-form-title">Add New Task</h3>
+                <form id="taskForm" onsubmit="handleTaskSubmit(event)">
+                    <input type="hidden" id="task-id">
+                    <div class="form-group">
+                        <label for="task-title">Title *</label>
+                        <input type="text" id="task-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-description">Description</label>
+                        <textarea id="task-description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-status">Status</label>
+                        <select id="task-status">
+                            <option value="pending">Pending</option>
+                            <option value="in_progress">In Progress</option>
+                            <option value="done">Done</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-employee">Assign to Employee</label>
+                        <select id="task-employee">
+                            <option value="">-- Unassigned --</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-secondary" onclick="cancelTaskForm()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Tasks List -->
+            <div id="tasks-list" class="grid"></div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
