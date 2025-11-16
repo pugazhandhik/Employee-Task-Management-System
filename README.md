@@ -183,11 +183,3 @@ MIT License - feel free to use this project for learning or commercial purposes.
 - Check browser console for errors
 - Ensure MongoDB Atlas allows connections from your IP
 
-## 📞 Support
-
-For issues or questions, please open an issue on GitHub.
-
----
-![dharsan](https://github.com/user-attachments/assets/cd120295-cb64-4364-a7fc-c7f9a1961f1e)
-
-Made with ❤️ using FastAPI and MongoDB
