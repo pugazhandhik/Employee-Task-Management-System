@@ -188,5 +188,6 @@ MIT License - feel free to use this project for learning or commercial purposes.
 For issues or questions, please open an issue on GitHub.
 
 ---
+![dharsan](https://github.com/user-attachments/assets/cd120295-cb64-4364-a7fc-c7f9a1961f1e)
 
 Made with ❤️ using FastAPI and MongoDB
