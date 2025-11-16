@@ -183,3 +183,19 @@ MIT License - feel free to use this project for learning or commercial purposes.
 - Check browser console for errors
 - Ensure MongoDB Atlas allows connections from your IP
 
+## screenshorts
+    
+   <img width="1919" height="954" alt="Screenshot 2025-11-16 203356" src="https://github.com/user-attachments/assets/2cf21089-996d-42b8-b5e6-b5ebe907f065" />
+   <img width="1916" height="969" alt="Screenshot 2025-11-16 203259" src="https://github.com/user-attachments/assets/0e894caf-9f1e-4baf-8d95-564074cc6313" />
+   <img width="1919" height="956" alt="Screenshot 2025-11-16 203231" src="https://github.com/user-attachments/assets/91e1a350-1b30-420c-8eba-ce3760f2f867" />
+   <img width="1918" height="958" alt="Screenshot 2025-11-16 203135" src="https://github.com/user-attachments/assets/e25bcc17-07a3-47d4-ade8-4012b78a9b79" />
+   <img width="1919" height="869" alt="Screenshot 2025-11-16 203100" src="https://github.com/user-attachments/assets/e853fe82-a236-43c7-a963-b7fa4214f093" />
+   <img width="1918" height="866" alt="Screenshot 2025-11-16 203038" src="https://github.com/user-attachments/assets/a8812394-83a4-4770-9f3b-241e24ca5d41" />
+   <img width="1519" height="803" alt="Screenshot 2025-11-16 202934" src="https://github.com/user-attachments/assets/430e368e-f3eb-4093-b326-9a33d0fb1671" />
+
+
+
+
+
+
+
